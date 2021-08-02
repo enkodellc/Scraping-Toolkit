@@ -45,7 +45,7 @@ public void LoadComponents()
 {
 	var ret = new HttpRequestFluent(true)
 		.FromUrl("https://github.com/otavioalfenas/Scraping-Toolkit")
-		.TryGetComponents(Scraping.Enums.TypeComponent.LinkButton| Scraping.Enums.TypeComponent.InputHidden)
+		.TryGetComponents(Scraping.Web.Enums.TypeComponent.LinkButton| Scraping.Web.Enums.TypeComponent.InputHidden)
 		.Load();
 }
 ```
@@ -57,7 +57,7 @@ public async void LoadComponents()
 {
 	var ret = await new HttpRequestFluent(true)
 		.FromUrl("https://github.com/otavioalfenas/Scraping-Toolkit")
-		.TryGetComponents(Scraping.Enums.TypeComponent.LinkButton| Scraping.Enums.TypeComponent.InputHidden)
+		.TryGetComponents(Scraping.Web.Enums.TypeComponent.LinkButton| Scraping.Web.Enums.TypeComponent.InputHidden)
 		.LoadAsync();
 }
 ```
